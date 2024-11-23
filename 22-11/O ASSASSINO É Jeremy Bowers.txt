@@ -1,0 +1,64 @@
+1 - 
+select * from crime_scene_report  
+where type = 'murder' and city = 'SQL City'
+
+2 - 
+select * from person 
+where address_street_name = 'Northwestern Dr'
+ORDER BY address_number ASC
+
+3 - 
+select * from person
+where address_street_name = 'Franklin Ave'
+and name like '%Annabel%'
+
+4 - 
+select * from interview
+where person_id = 14887
+
+5 - 
+select * from interview
+where person_id = 16371
+
+6 - 
+select * from drivers_license
+where plate_number like '%H42W%'
+
+7 -
+select * from get_fit_now_check_in
+where check_in_date = 20180109
+
+8 -
+SELECT * from get_fit_now_member
+where membership_status = 'gold'
+AND id like '%48Z%'
+
+9 - 
+SELECT * from person 
+where name = 'Joe Germuska'
+
+10 - 
+SELECT * from person 
+where name = 'Jeremy Bowers'
+
+11 - 
+SELECT * from drivers_license
+where id = 423327
+
+12 -
+INSERT INTO solution VALUES (423327, 'Jeremy Bowers');
+        
+        SELECT value FROM solution;
+
+
+
+
+
+
+
+
+
+
+
+
+
