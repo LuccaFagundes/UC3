@@ -54,3 +54,30 @@ id	age	height	eye_color	hair_color	gender	plate_number	car_make	car_model
 
 select * from get_fit_now_check_in
 where check_in_date = 20180109
+
+SELECT * from get_fit_now_member
+where membership_status = 'gold'
+AND id like '%48Z%'
+
+id	person_id	name		membership_start_date	membership_status
+48Z7A	28819		Joe Germuska	20160305		gold
+48Z55	67318		Jeremy Bowers	20160101		gold
+
+SELECT * from person 
+where name = 'Joe Germuska'
+
+id	name		license_id	address_number	address_street_name	ssn
+28819	Joe Germuska	173289		111		Fisk Rd			138909730
+
+
+SELECT * from person 
+where name = 'Jeremy Bowers'
+
+id	name		license_id	address_number	address_street_name	ssn
+67318	Jeremy Bowers	423327		530		Washington Pl, Apt 3A	871539279
+
+THESE TWO ARE SUSPECTS
+
+
+
+
