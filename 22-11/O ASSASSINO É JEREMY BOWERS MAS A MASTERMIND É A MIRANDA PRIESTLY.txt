@@ -1,0 +1,75 @@
+1 - //ver todas as cenas que contem assassinatos
+select * from crime_scene_report  
+where type = 'murder' and city = 'SQL City'
+
+2 - //após ver os depoimentos procurar as testemunhas
+select * from person 
+where address_street_name = 'Northwestern Dr'
+ORDER BY address_number ASC
+
+3 - //sendo duas 
+select * from person
+where address_street_name = 'Franklin Ave'
+and name like '%Annabel%'
+
+4 - //procurar o depoimento das testemunhas por seus ids
+select * from interview
+where person_id = 14887
+
+5 - //procurar o depoimento das testemunhas por seus ids
+select * from interview
+where person_id = 16371
+
+6 - //primeira testemunha diz uma data quando ocorreu e que foi numa academia
+select * from get_fit_now_check_in
+where check_in_date = 20180109
+
+7 - //segunda testemunha diz uma placa de carro
+select * from drivers_license
+where plate_number like '%H42W%'
+
+8 - //e que o assassino era um homem com uma mochila da academia de status gold e codigo ~48Z~
+SELECT * from get_fit_now_member
+where membership_status = 'gold'
+AND id like '%48Z%'
+
+9 - //primeiro suspeito
+SELECT * from person 
+where name = 'Joe Germuska'
+
+10 - //segundo suspeito
+SELECT * from person 
+where name = 'Jeremy Bowers'
+
+11 - //jeremy diz ter sido contratado por MUITO dinheiro
+select * from interview
+where person_id = 67318 
+
+12 - //procurando o veiculo que jeremy atestou que a contratadora possue
+select * from drivers_license
+where car_make like '%tesla%' and car_model like '%model_s%' and gender = 'female'
+
+13 - //procurando a pessoa em si pela carteira de motorista
+select * from person
+where license_id = 202298
+
+14 - //após achar algumas pessoas eu testei o ssn/cpf das pessoas para ver quanto ganham e esta pessoa ganha a maior quantidade
+select * from income 
+where ssn = 987756388
+
+15 -
+INSERT INTO solution VALUES (1, 'Miranda Priestly');
+        
+        SELECT value FROM solution;
+
+
+
+
+
+
+
+
+
+
+
+
